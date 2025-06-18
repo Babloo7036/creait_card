@@ -12,7 +12,12 @@ agent = CreditCardAgent()
 
 # SQLite database connection
 def get_db_connection():
-    db_path = os.getenv("DB_PATH", "/app/data/credit_cards.db")
+    # Use relative path for local dev, override with DB_PATH for Render
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    default_db_path = os.path.join(base_dir, "data", "credit_cards.db")
+    db_path = os.getenv("DB_PATH", default_db_path)
+    # Ensure the directory exists
+    os.makedirs(os.path.dirname(db_path), exist_ok=True)
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     return conn
@@ -37,7 +42,8 @@ def init_db():
         )
     ''')
     # Load sample data from JSON
-    with open('data/cards.json', 'r') as f:
+    json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "cards.json")
+    with open(json_path, 'r') as f:
         cards = json.load(f)
     cursor.executemany('''
         INSERT OR IGNORE INTO credit_cards (name, issuer, annual_fee, reward_type, reward_rate, min_income, min_credit_score, perks, apply_link, img_url)
