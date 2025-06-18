@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Cashback SBI Credit Card",
+    "issuer": "SBI Card",
+    "annual_fee": 999,
+    "reward_type": "cashback",
+    "reward_rate": "5% on online spends, 1% on others",
+    "eligibility": {"min_income": 25000, "min_credit_score": 700},
+    "perks": ["5% cashback on groceries", "Fuel surcharge waiver"],
+    "apply_link": "https://sbicard.com/apply/cashback",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2022/09/Cashback-SBI-Credit-Card.webp"
+  },
+  {
+    "name": "Swiggy HDFC Bank Credit Card",
+    "issuer": "HDFC Bank",
+    "annual_fee": 500,
+    "reward_type": "cashback",
+    "reward_rate": "10% cashback on Swiggy, 5% on dining",
+    "eligibility": {"min_income": 30000, "min_credit_score": 720},
+    "perks": ["Dining benefits", "Complimentary Swiggy One membership"],
+    "apply_link": "https://hdfcbank.com/apply/swiggy",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/06/Swiggy-HDFC-Bank-Credit-Card.webp"
+  },
+  {
+    "name": "HDFC Bank Millennia Credit Card",
+    "issuer": "HDFC Bank",
+    "annual_fee": 1000,
+    "reward_type": "cashback",
+    "reward_rate": "5% on Amazon, Flipkart, 1% elsewhere",
+    "eligibility": {"min_income": 35000, "min_credit_score": 720},
+    "perks": ["Airport lounge access", "Cashback on online shopping"],
+    "apply_link": "https://hdfcbank.com/apply/millennia",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/09/HDFC-Bank-Millennia-Credit-Card.webp"
+  },
+  {
+    "name": "Amazon Pay ICICI Bank Credit Card",
+    "issuer": "ICICI Bank",
+    "annual_fee": 0,
+    "reward_type": "cashback",
+    "reward_rate": "5% on Amazon (Prime), 1% elsewhere",
+    "eligibility": {"min_income": 20000, "min_credit_score": 700},
+    "perks": ["No annual fee", "Fuel surcharge waiver"],
+    "apply_link": "https://icicibank.com/apply/amazonpay",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/06/Amazon-Pay-ICICI-Bank-Credit-Card-1.webp"
+  },
+  {
+    "name": "Flipkart Axis Bank Credit Card",
+    "issuer": "Axis Bank",
+    "annual_fee": 500,
+    "reward_type": "cashback",
+    "reward_rate": "5% on Flipkart, 1.5% elsewhere",
+    "eligibility": {"min_income": 25000, "min_credit_score": 710},
+    "perks": ["Welcome voucher", "Airport lounge access"],
+    "apply_link": "https://axisbank.com/apply/flipkart",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/08/Flipkart-Axis-Bank-Credit-Card.webp"
+  },
+  {
+    "name": "American Express Membership Rewards® Credit Card",
+    "issuer": "American Express",
+    "annual_fee": 1500,
+    "reward_type": "points",
+    "reward_rate": "1 MR point per ₹50, bonus on spends",
+    "eligibility": {"min_income": 40000, "min_credit_score": 730},
+    "perks": ["Amex dining offers", "Exclusive rewards catalogue"],
+    "apply_link": "https://americanexpress.com/apply/membership",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/06/American-Express-Membership-Rewards®-Credit-Card.webp"
+  },
+  {
+    "name": "IDFC First Bank Ashva Metal Credit Card",
+    "issuer": "IDFC First Bank",
+    "annual_fee": 4999,
+    "reward_type": "points",
+    "reward_rate": "6X on online, 3X offline",
+    "eligibility": {"min_income": 100000, "min_credit_score": 750},
+    "perks": ["Metal card design", "Unlimited lounge access"],
+    "apply_link": "https://idfcfirstbank.com/apply/ashva",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/08/IDFC-First-Bank-Ashva-Metal-Credit-Card.webp"
+  },
+  {
+    "name": "Tata Neu Infinity HDFC Bank Credit Card",
+    "issuer": "HDFC Bank",
+    "annual_fee": 1499,
+    "reward_type": "neucoins",
+    "reward_rate": "5% NeuCoins on Tata brands, 1.5% elsewhere",
+    "eligibility": {"min_income": 30000, "min_credit_score": 720},
+    "perks": ["NeuPass membership", "Welcome NeuCoins"],
+    "apply_link": "https://tatadigital.com/apply/tataneu",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2022/08/Tata-Neu-Infinity-HDFC-Bank-Credit-Card.webp"
+  },
+  {
+    "name": "Airtel Axis Bank Credit Card",
+    "issuer": "Axis Bank",
+    "annual_fee": 500,
+    "reward_type": "cashback",
+    "reward_rate": "25% on Airtel bills, 10% on utility",
+    "eligibility": {"min_income": 30000, "min_credit_score": 710},
+    "perks": ["Cashback on DTH and broadband", "Fuel surcharge waiver"],
+    "apply_link": "https://axisbank.com/apply/airtel",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2022/03/Airtel-Axis-Bank-Rupay-Credit-Card.webp"
+  },
+  {
+    "name": "Axis Bank Neo Credit Card",
+    "issuer": "Axis Bank",
+    "annual_fee": 250,
+    "reward_type": "discount",
+    "reward_rate": "10% on Zomato, Myntra, BookMyShow",
+    "eligibility": {"min_income": 20000, "min_credit_score": 700},
+    "perks": ["Movie & shopping discounts", "Low annual fee"],
+    "apply_link": "https://axisbank.com/apply/neo",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/08/Axis-Bank-Neo-Credit-Card.webp"
+  },
+  {
+    "name": "AU Bank LIT Credit Card",
+    "issuer": "AU Small Finance Bank",
+    "annual_fee": 0,
+    "reward_type": "custom",
+    "reward_rate": "User-defined benefits (modular)",
+    "eligibility": {"min_income": 30000, "min_credit_score": 710},
+    "perks": ["Customizable features", "Fuel surcharge waiver", "Lounge access add-on"],
+    "apply_link": "https://aubank.in/apply/lit",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2022/07/AU-Bank-LIT-Credit-Card.webp"
+  },
+  {
+    "name": "IndusInd Legend Credit Card",
+    "issuer": "IndusInd Bank",
+    "annual_fee": 999,
+    "reward_type": "points",
+    "reward_rate": "1.5 reward points per ₹100",
+    "eligibility": {"min_income": 40000, "min_credit_score": 720},
+    "perks": ["Golf privileges", "Concierge services", "Lounge access"],
+    "apply_link": "https://indusind.com/apply/legend",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/07/IndusInd-Legend-Credit-Card.webp"
+  },
+  {
+    "name": "Axis Bank Atlas Credit Card",
+    "issuer": "Axis Bank",
+    "annual_fee": 5000,
+    "reward_type": "miles",
+    "reward_rate": "2 EDGE Miles per ₹100",
+    "eligibility": {"min_income": 80000, "min_credit_score": 750},
+    "perks": ["Travel insurance", "Priority Pass membership", "AirMiles conversion"],
+    "apply_link": "https://axisbank.com/apply/atlas",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2022/02/Axis-Bank-Atlas-Credit-Card.webp"
+  },
+  {
+    "name": "IDFC FIRST Select Credit Card",
+    "issuer": "IDFC First Bank",
+    "annual_fee": 0,
+    "reward_type": "points",
+    "reward_rate": "6X on online, 3X offline",
+    "eligibility": {"min_income": 40000, "min_credit_score": 720},
+    "perks": ["Low forex markup", "Complimentary roadside assistance"],
+    "apply_link": "https://idfcfirstbank.com/apply/select",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/08/IDFC-FIRST-Select-Credit-Card.webp"
+  },
+  {
+    "name": "BPCL SBI Octane Credit Card",
+    "issuer": "SBI Card",
+    "annual_fee": 1499,
+    "reward_type": "fuel points",
+    "reward_rate": "6.25% on BPCL fuel spends",
+    "eligibility": {"min_income": 25000, "min_credit_score": 700},
+    "perks": ["Fuel surcharge waiver", "Turbo reward points on fuel"],
+    "apply_link": "https://sbicard.com/apply/bpcl-octane",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/07/BPCL-SBI-Octane-Credit-Card.webp"
+  },
+  {
+    "name": "American Express Platinum Travel Credit Card",
+    "issuer": "American Express",
+    "annual_fee": 3500,
+    "reward_type": "points",
+    "reward_rate": "5 MR points per ₹100 on travel bookings",
+    "eligibility": {"min_income": 60000, "min_credit_score": 730},
+    "perks": ["Taj vouchers on milestones", "Travel insurance", "Domestic lounge access"],
+    "apply_link": "https://americanexpress.com/apply/platinumtravel",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/06/American-Express-Platinum-Travel-Credit-Card.webp"
+  },
+  {
+    "name": "HDFC Bank INFINIA Metal Credit Card",
+    "issuer": "HDFC Bank",
+    "annual_fee": 12500,
+    "reward_type": "points",
+    "reward_rate": "5 reward points per ₹150",
+    "eligibility": {"min_income": 300000, "min_credit_score": 800},
+    "perks": ["Unlimited lounge access", "Golf & concierge services", "Low forex markup"],
+    "apply_link": "https://hdfcbank.com/apply/infinia",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2021/10/HDFC-Bank-INFINIA-Metal-Credit-Card.webp"
+  },
+  {
+    "name": "BOBCARD Tiara Credit Card",
+    "issuer": "Bank of Baroda",
+    "annual_fee": 999,
+    "reward_type": "points",
+    "reward_rate": "2 reward points per ₹100",
+    "eligibility": {"min_income": 25000, "min_credit_score": 700},
+    "perks": ["Women-centric benefits", "Domestic lounge access", "Health check-up vouchers"],
+    "apply_link": "https://bobfinancial.com/apply/tiara",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/12/BOBCARD-Tiara-Credit-Card.webp"
+  },
+  {
+    "name": "MakeMyTrip ICICI Bank Credit Card",
+    "issuer": "ICICI Bank",
+    "annual_fee": 500,
+    "reward_type": "cashback",
+    "reward_rate": "10% on MMT bookings, 1% elsewhere",
+    "eligibility": {"min_income": 30000, "min_credit_score": 720},
+    "perks": ["Free MMTBLACK subscription", "Travel vouchers", "Airport lounge access"],
+    "apply_link": "https://icicibank.com/apply/mmt",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/10/MakeMyTrip-ICICI-Bank-Credit-Card.webp"
+  },
+  {
+    "name": "HSBC Cashback Credit Card",
+    "issuer": "HSBC Bank",
+    "annual_fee": 750,
+    "reward_type": "cashback",
+    "reward_rate": "1.5% on online, 1% offline",
+    "eligibility": {"min_income": 30000, "min_credit_score": 720},
+    "perks": ["Amazon vouchers on activation", "Dining offers", "No annual fee for 1st year"],
+    "apply_link": "https://hsbc.co.in/creditcards/cashback",
+    "img_url": "https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2024/06/HSBC-Live-Credit-Card.webp"
+  }
+]
