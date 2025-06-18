@@ -1,8 +1,12 @@
 import streamlit as st
 import requests
 import json
+import os
 
 st.set_page_config(page_title="Credit Card Advisor", layout="wide")
+
+# Use environment variable for backend URL
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:5000")
 
 if "session_id" not in st.session_state:
     st.session_state.session_id = None
@@ -11,14 +15,14 @@ if "session_id" not in st.session_state:
     st.session_state.recommendations = None
 
 def start_session():
-    response = requests.post("http://localhost:5000/start_session")
+    response = requests.post(f"{BACKEND_URL}/start_session")
     data = response.json()
     st.session_state.session_id = data["session_id"]
     st.session_state.current_question = data["question"]
     st.session_state.conversation.append({"role": "Assistant", "message": data["question"]})
 
 def submit_answer(answer):
-    response = requests.post("http://localhost:5000/submit_answer", json={"session_id": st.session_state.session_id, "answer": answer})
+    response = requests.post(f"{BACKEND_URL}/submit_answer", json={"session_id": st.session_state.session_id, "answer": answer})
     data = response.json()
     st.session_state.conversation.append({"role": "User", "message": answer})
     st.session_state.current_question = data["question"]
@@ -27,7 +31,7 @@ def submit_answer(answer):
         get_recommendations()
 
 def get_recommendations():
-    response = requests.post("http://localhost:5000/get_recommendations", json={"session_id": st.session_state.session_id})
+    response = requests.post(f"{BACKEND_URL}/get_recommendations", json={"session_id": st.session_state.session_id})
     st.session_state.recommendations = response.json()["recommendations"]
 
 st.title("Credit Card Advisor")
@@ -56,6 +60,8 @@ if st.session_state.recommendations:
     st.subheader("Recommended Credit Cards")
     for rec in st.session_state.recommendations:
         with st.expander(f"{rec['name']} ({rec['issuer']})"):
+            if rec["img_url"]:
+                st.image(rec["img_url"], width=200)
             st.write(f"**Annual Fee**: ₹{rec['annual_fee']}")
             st.write(f"**Reward Type**: {rec['reward_type']} ({rec['reward_rate']})")
             st.write(f"**Perks**: {', '.join(rec['perks'])}")
@@ -64,7 +70,7 @@ if st.session_state.recommendations:
             st.write(f"[Apply Now]({rec['apply_link']})")
     
     if st.button("Compare Cards"):
-        st.write("### Card Comparison")
+        st.subheader("Card Comparison")
         st.table([
             {
                 "Name": rec["name"],

@@ -3,6 +3,7 @@ from agent import CreditCardAgent
 from recommendation import recommend_cards
 import sqlite3
 import json
+import os
 
 app = Flask(__name__)
 
@@ -11,7 +12,8 @@ agent = CreditCardAgent()
 
 # SQLite database connection
 def get_db_connection():
-    conn = sqlite3.connect('data/credit_cards.db')
+    db_path = os.getenv("DB_PATH", "/app/data/credit_cards.db")
+    conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -30,18 +32,19 @@ def init_db():
             min_income INTEGER,
             min_credit_score INTEGER,
             perks TEXT,
-            apply_link TEXT
+            apply_link TEXT,
+            img_url TEXT
         )
     ''')
     # Load sample data from JSON
     with open('data/cards.json', 'r') as f:
         cards = json.load(f)
     cursor.executemany('''
-        INSERT OR IGNORE INTO credit_cards (name, issuer, annual_fee, reward_type, reward_rate, min_income, min_credit_score, perks, apply_link)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT OR IGNORE INTO credit_cards (name, issuer, annual_fee, reward_type, reward_rate, min_income, min_credit_score, perks, apply_link, img_url)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', [(c['name'], c['issuer'], c['annual_fee'], c['reward_type'], c['reward_rate'], 
            c['eligibility']['min_income'], c['eligibility']['min_credit_score'], 
-           json.dumps(c['perks']), c['apply_link']) for c in cards])
+           json.dumps(c['perks']), c['apply_link'], c['img_url']) for c in cards])
     conn.commit()
     conn.close()
 
@@ -73,4 +76,5 @@ def get_recommendations():
 
 if __name__ == '__main__':
     init_db()
-    app.run(debug=True)
+    port = int(os.getenv("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
